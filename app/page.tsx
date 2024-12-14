@@ -14,7 +14,7 @@ export default function Home() {
   const isMobile = width < 640;
   const isTablet = width < 768;
 
-  const logoSize = isMobile ? 150 : isTablet ? 170 : 200;
+  const logoSize = isMobile ? 130 : isTablet ? 170 : 200;
 
   return (
     <main className="min-h-screen relative overflow-hidden flex items-center justify-center p-4">
