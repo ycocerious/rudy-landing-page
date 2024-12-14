@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Toaster } from "sonner";
@@ -22,6 +24,8 @@ export default function RootLayout({
       <body className={inter.className}>
         <Providers>
           {children}
+          <Analytics />
+          <SpeedInsights />
           <Toaster position="top-center" />
         </Providers>
       </body>
