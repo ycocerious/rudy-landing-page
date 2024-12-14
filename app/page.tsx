@@ -54,7 +54,7 @@ export default function Home() {
           </p>
 
           {/* Core Features */}
-          <div className="flex justify-center mb-16 sm:mb-24 md:mb-32 mt-16 md:mt-24">
+          <div className="flex justify-center mb-16 sm:mb-24 md:mb-32 mt-4 sm:mt-16 md:mt-24">
             <FeatureIcon icon={Moon} label="Sleep Better" delay={0.2} />
             <FeatureIcon icon={Dumbbell} label="Move More" delay={0.4} />
             <FeatureIcon icon={Apple} label="Eat Well" delay={0.6} />
@@ -73,7 +73,7 @@ export default function Home() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1.2 }}
-              className="mt-16 space-y-2"
+              className="mt-8 sm:mt-16 space-y-2"
             >
               <p className="text-sm text-primary">
                 🎯 Simple tracking. Real progress. No overwhelm.
