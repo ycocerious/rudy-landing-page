@@ -1,6 +1,7 @@
 "use client";
 
 import { CursorGlow } from "@/components/cursor-glow";
+import { DotMatrix } from "@/components/dot-matrix";
 import { FeatureIcon } from "@/components/feature-icon";
 import { WaitlistButton } from "@/components/waitlist-button";
 import { useWindowSize } from "@/hooks/use-window-size";
@@ -22,6 +23,7 @@ export default function Home() {
 
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-card opacity-90" />
+      <DotMatrix />
 
       {/* Main Content */}
       <div className="relative z-10 mx-auto text-center px-4">
