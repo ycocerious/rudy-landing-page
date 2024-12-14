@@ -17,7 +17,7 @@ export default function Home() {
   const logoSize = isMobile ? 130 : isTablet ? 170 : 200;
 
   return (
-    <main className="min-h-screen relative overflow-hidden flex items-center justify-center p-4">
+    <main className="min-h-screen relative overflow-hidden flex items-center justify-center p-4 pt-0">
       <CursorGlow />
 
       {/* Background Elements */}
@@ -48,7 +48,7 @@ export default function Home() {
             Track Sleep, Exercise & Nutrition
           </h1>
 
-          <p className="text-sm sm:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto px-4">
+          <p className="text-base sm:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto px-4">
             A minimalist habit tracker designed to help you build a healthier
             lifestyle
           </p>
@@ -73,7 +73,7 @@ export default function Home() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1.2 }}
-              className="mt-8 sm:mt-16 space-y-2"
+              className="hidden sm:block mt-8 sm:mt-16 space-y-2"
             >
               <p className="text-xs sm:text-sm text-primary">
                 🎯 Simple tracking. Real progress. No overwhelm.
