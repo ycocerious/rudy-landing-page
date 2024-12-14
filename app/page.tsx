@@ -75,10 +75,10 @@ export default function Home() {
               transition={{ delay: 1.2 }}
               className="mt-8 sm:mt-16 space-y-2"
             >
-              <p className="text-sm text-primary">
+              <p className="text-xs sm:text-sm text-primary">
                 🎯 Simple tracking. Real progress. No overwhelm.
               </p>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-xs sm:text-sm text-muted-foreground">
                 🚀 Launching December 30 2024
               </p>
             </motion.div>
