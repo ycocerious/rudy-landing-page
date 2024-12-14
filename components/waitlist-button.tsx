@@ -113,7 +113,7 @@ export function WaitlistButton() {
           whileHover={{ scale: 1.05 }}
           onClick={handleJoinWaitlist}
         >
-          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground whitespace-nowrap rounded-xl w-1/3">
+          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground whitespace-nowrap rounded-xl w-1/3 min-w-[8rem]">
             Join Waitlist!!!
           </Button>
         </motion.div>

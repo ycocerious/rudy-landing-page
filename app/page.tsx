@@ -54,7 +54,7 @@ export default function Home() {
           </p>
 
           {/* Core Features */}
-          <div className="flex justify-center mb-24 md:mb-32 mt-16 md:mt-24">
+          <div className="flex justify-center mb-16 sm:mb-24 md:mb-32 mt-16 md:mt-24">
             <FeatureIcon icon={Moon} label="Sleep Better" delay={0.2} />
             <FeatureIcon icon={Dumbbell} label="Move More" delay={0.4} />
             <FeatureIcon icon={Apple} label="Eat Well" delay={0.6} />
