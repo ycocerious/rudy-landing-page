@@ -64,8 +64,8 @@ export function WaitlistButton() {
 
   return (
     <div className="relative space-y-4">
-      <div className="flex flex-col max-w-sm mx-auto gap-4">
-        <div className="absolute -top-20 -right-8 flex items-center">
+      <div className="flex flex-col max-w-sm mx-auto gap-4 px-4">
+        <div className="absolute -top-[5.5rem] -right-8 flex items-center">
           <svg
             width="60"
             height="60"
@@ -93,7 +93,7 @@ export function WaitlistButton() {
           </svg>
           <p
             className={cn(
-              "text-4xl rotate-[-8deg] text-primary",
+              "text-2xl sm:text-3xl md:text-4xl rotate-[-8deg] text-primary pr-4",
               caveat.className
             )}
           >

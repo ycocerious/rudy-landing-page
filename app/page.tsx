@@ -3,11 +3,19 @@
 import { CursorGlow } from "@/components/cursor-glow";
 import { FeatureIcon } from "@/components/feature-icon";
 import { WaitlistButton } from "@/components/waitlist-button";
+import { useWindowSize } from "@/hooks/use-window-size";
 import { motion } from "framer-motion";
 import { Apple, Dumbbell, Moon } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
+  const { width } = useWindowSize();
+
+  const isMobile = width < 640;
+  const isTablet = width < 768;
+
+  const logoSize = isMobile ? 150 : isTablet ? 170 : 200;
+
   return (
     <main className="min-h-screen relative overflow-hidden flex items-center justify-center p-4">
       <CursorGlow />
@@ -16,7 +24,7 @@ export default function Home() {
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-card opacity-90" />
 
       {/* Main Content */}
-      <div className="relative z-10 mx-auto text-center">
+      <div className="relative z-10 mx-auto text-center px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -31,23 +39,22 @@ export default function Home() {
             <Image
               src="/logo.png"
               alt="Rudy Logo"
-              width={200}
-              height={200}
-              className="rounded-none"
+              width={logoSize}
+              height={logoSize}
             />
           </motion.div>
 
-          <h1 className="text-6xl font-bold mb-4 gradient-text">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 gradient-text">
             Track Sleep, Exercise & Nutrition
           </h1>
 
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto px-4">
             A minimalist habit tracker designed to help you build a healthier
             lifestyle
           </p>
 
           {/* Core Features */}
-          <div className="flex justify-center gap-40 mb-32 mt-24">
+          <div className="flex justify-center mb-24 md:mb-32 mt-16 md:mt-24">
             <FeatureIcon icon={Moon} label="Sleep Better" delay={0.2} />
             <FeatureIcon icon={Dumbbell} label="Move More" delay={0.4} />
             <FeatureIcon icon={Apple} label="Eat Well" delay={0.6} />
@@ -58,7 +65,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1 }}
-            className="mt-16"
+            className="mt-20"
           >
             <WaitlistButton />
 
