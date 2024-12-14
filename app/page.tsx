@@ -48,7 +48,7 @@ export default function Home() {
             Track Sleep, Exercise & Nutrition
           </h1>
 
-          <p className="text-base sm:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto px-4">
+          <p className="text-sm sm:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto px-4">
             A minimalist habit tracker designed to help you build a healthier
             lifestyle
           </p>
