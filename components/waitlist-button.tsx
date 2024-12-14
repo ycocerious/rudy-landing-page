@@ -97,7 +97,8 @@ export function WaitlistButton() {
               caveat.className
             )}
           >
-            Join {emails.length} Early Adopters!
+            Join {emails.length} Early{" "}
+            {emails.length === 1 ? "Adopter" : "Adopters"}!
           </p>
         </div>
 
